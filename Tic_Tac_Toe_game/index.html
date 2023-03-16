@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic_Tac_Toe</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/aside.css">
+    <link rel="stylesheet" href="styles/java.css">
+    <script src="script/config.js" defer></script>
+    <script src="script/game.js" defer></script>
+    <script src="script/app.js" defer></script>
+</head>
+<body>
+<!--------- HEADER SECION --------->
+    <header>
+        <h1>Play Tic-Tac-Toe </h1>
+        <p>Built with Html css and Javascript</p>
+
+    </header>
+<!------- MAIN SECTION  ----->
+    <main>
+
+      <!---- TO TAKE USER NAME DIALOG BOX ---->
+      <div class="shadow"></div>
+    <aside class="userInput">
+        <div class="box">
+        <h2>Choose Your Name</h2>
+        <form id="form">
+            
+                <div>
+                    <label for="playerName" id="player">Player Name</label>
+                    <input type="text" name="playerName" id="PlayerName">
+                    <p id="error">please enter a valid name !</p>
+                </div>
+                <div class="Playerbutton">
+                    <button type="reset" id="reset">Cancel</button>
+                    <button type="submit" id="submit">Confirm</button>
+                </div>
+            </div>
+        </form>
+    </aside>
+<!------ PLAYER SECTION--------->
+        <section class="playerSection">
+            <ol id="players">
+                <li>
+                    <article>
+                        <h2>Player 1</h2>
+                        <h3 id="player-1-data">PLAYER NAME</h3>
+                        <p>X</p>
+                        <button id="edit1" data-player="1">Edit</button>
+
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h2>Player 2</h2>
+                        <h3 id="player-2-data">PLAYER NAME</h3>
+                        <p>O</p>
+                        <button id="edit2" data-player="2">Edit</button>
+                        
+                    </article>
+                </li>
+            </ol>
+            <div class="btn"><button id="startGame">Start New Game</button></div>
+        </section>
+    <!---------- GAME SECTION  ---------->
+        <section  id="gameSection">
+    
+
+    <!------ GAME OVER SECTION------>
+    <aside class="gameOver">
+        <article id="game-over">
+            <h1>YOU WON ,<span>PLAYER Name</span></h1>
+            <p>Click "Start New Game" above, to start a new game!</p>
+        </article>
+    </aside>
+
+    <!------ GAME BOARD   SECTION-------->
+            <p>It's Your Turn  <span id="play"></span></p>
+            <ol id="game">
+
+                <li data-col="1" data-row="1"></li>
+                <li data-col="2" data-row="1"></li>
+                <li data-col="3" data-row="1"></li>
+
+                <li data-col="1" data-row="2"></li>
+                <li data-col="2" data-row="2"></li>
+                <li data-col="3" data-row="2"></li>
+
+                <li data-col="1" data-row="3"></li>
+                <li data-col="2" data-row="3"></li>
+                <li data-col="3" data-row="3"></li>
+
+            </ol>
+        </section>
+
+    </main>
+    <ol id="list"> 
+        <li></li>
+        <li></li>
+        <li></li>
+    </ol>
+</body>
+</html>

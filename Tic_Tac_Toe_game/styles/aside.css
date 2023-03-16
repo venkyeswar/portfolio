@@ -1,0 +1,97 @@
+
+.userInput{
+    display:none;
+}
+.shadow{
+    display:none;
+}
+/* USER INPUT SECTION STYLING */
+
+#error{
+    display:none;
+    color:rgb(240, 1, 1);
+    font-weight:bolder;
+    
+}
+.userInput{
+    width:100%;
+    position:fixed;
+   
+}
+.shadow{
+    top:0px;
+    margin:0px;
+    padding:0px;
+    width:100%;
+    height:100vh;
+    position:fixed;
+    background:rgba(121, 32, 148, 0.32);
+}
+.box{
+    display:relative;
+    text-align:center;
+    margin:8em 25%;
+    background-color:rgb(20, 13, 20);
+    padding-bottom:1em;
+    border-radius:8px;
+
+}
+.box h2{
+    color:white;
+    padding-top:1em;
+    padding-bottom:.5em;
+}
+.box form #player{
+    font-size:1.2em;
+    color:white;
+}
+.box form input,label{
+    display:flex;
+    flex-direction:column;
+    margin:1em auto;
+}
+.box form .Playerbutton button{
+color:red;
+margin:0.9em;
+
+}
+.box form .Playerbutton #reset{
+    padding:4px 6px;
+
+}
+.box form .Playerbutton #submit{
+    background:rgb(233, 102, 9);
+    color:rgb(255, 255, 255);
+    border:none;
+    padding:6px;
+    padding-left:7px;
+    font-size:1em;
+}
+
+
+
+/*  GAAME OVER SECTION STYLING */
+.gameOver #game-over {
+    margin: 2em auto;
+    width: 80%;
+    justify-content: center;
+    color: white;
+    padding: 2em 1em;
+    background-color: rgb(86, 17, 98);
+    border-radius: 8px;
+    display:none;
+
+}
+
+
+#game-over h1 {
+    font-weight: bolder;
+    font-family: verdana;
+}
+
+#game-over p {
+    color: white;
+    font-family: verdana;
+    padding: 1em;
+    font-weight: bolder;
+}
