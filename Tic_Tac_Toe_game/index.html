@@ -5,14 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic_Tac_Toe</title>
+    <link rel="icon" href="images/blue.ico" type="images/x-icon">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/aside.css">
     <link rel="stylesheet" href="styles/java.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>  
+    <script>  
+        $(window).on('load', function () {  
+            $(".container").fadeOut("slow");  
+       });  
+    </script> 
     <script src="script/config.js" defer></script>
     <script src="script/game.js" defer></script>
     <script src="script/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/6384f8201b.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container">
+        <div class="loading"> <div class="a"> </div> <div class="b"> </div></div>
+<h3  id="loaderTxt">loading ...!</h3>
+      </div>
+
 <!--------- HEADER SECION --------->
     <header>
         <h1>Play Tic-Tac-Toe </h1>
@@ -49,7 +63,7 @@
                         <h2>Player 1</h2>
                         <h3 id="player-1-data">PLAYER NAME</h3>
                         <p>X</p>
-                        <button id="edit1" data-player="1">Edit</button>
+                        <button id="edit1" data-player="1">EDIT</button>
 
                     </article>
                 </li>
@@ -58,7 +72,7 @@
                         <h2>Player 2</h2>
                         <h3 id="player-2-data">PLAYER NAME</h3>
                         <p>O</p>
-                        <button id="edit2" data-player="2">Edit</button>
+                        <button id="edit2" data-player="2">EDIT</button>
                         
                     </article>
                 </li>
@@ -72,7 +86,7 @@
     <!------ GAME OVER SECTION------>
     <aside class="gameOver">
         <article id="game-over">
-            <h1>YOU WON ,<span>PLAYER Name</span></h1>
+            <h1>YOU WON ,<span id="winner">PLAYER Name</span>!</h1>
             <p>Click "Start New Game" above, to start a new game!</p>
         </article>
     </aside>
@@ -97,10 +111,17 @@
         </section>
 
     </main>
-    <ol id="list"> 
-        <li></li>
-        <li></li>
-        <li></li>
-    </ol>
+   
+
+    <footer>
+        <div class="icons">
+            <a href="https://instagram.com/venky_eswar_?igshid=ZDdkNTZiNTM=" class="fa-brands fa-instagram"></a>
+            <a href="https://www.facebook.com/profile.php?id=100058682121466&mibextid=ZbWKwL" class="fa-brands fa-facebook"></a>
+            <a href="https://www.linkedin.com/in/venkateswarlu-garnimitta-4ba7ba225" class="fa-brands fa-linkedin"></a>
+            <a href="mailto:venkyeswar777@gmail.com" class="fa-regular fa-envelope"></a>
+        </div>
+        <span id="id">Designed by&nbsp &nbsp <sup>©</sup> &nbspVenky ,All rights reserved</span>
+           
+    </footer>
 </body>
 </html>

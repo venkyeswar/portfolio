@@ -1,0 +1,235 @@
+@media (max-width:768px){
+    #players li{
+        margin:3em 1.4em;
+        padding:2.5em 3.5em;
+    }
+}
+@media (max-width:475px){
+    #players ol{
+       display:block;
+        padding:2em;
+        justify-content:center;
+        justify-items:center;
+    }
+    #players li {
+        background-color: rgba(216, 197, 242, 0.514);
+        padding-top:20px;
+        width:40px;
+        margin-right:8px;
+        margin-left:4px;
+        text-align:center;
+        padding-left:35px;
+    
+        display:flex;
+        border-radius: 8px;
+        box-shadow: 1px 1px 2px rgb(165, 128, 128), -1px -1px 2px rgb(165, 128, 128);
+    
+    }
+    
+    
+    #players li h2 {
+        color: rgb(24, 22, 22);
+        font-size: 1em;
+        padding-bottom: 10px;
+    }
+    
+    #players li h3 {
+        color: rgb(149, 0, 255);
+        text-transform: uppercase;
+    }
+    
+    #players li p {
+        font-size: 14px;
+        font-family: verdana;
+        font-weight: bolder;
+        padding-top: 10px;
+        color: rgb(11, 11, 10);
+    }
+    
+    #players button {
+        border: none;
+        text-transform:capitalize;
+        background: none;
+        margin-top: 20px;
+        color: rgb(254, 254, 254);
+        cursor: pointer;
+        font-weight:bolder;
+        background:rgb(120, 27, 146);
+        padding:3px 20px;
+        border-radius:5px;
+    }
+
+
+    /* user input */
+    #error{
+        display:none;
+        color:rgb(240, 1, 1);
+        font-weight:bolder;
+        
+    }
+    .userInput{
+        top:-1em;
+        width:100%;
+        position:fixed;
+       
+    }
+    .shadow{
+        top:10px;
+        margin:0px;
+        padding:0px;
+        width:100%;
+        height:100vh;
+        position:fixed;
+        background:rgba(121, 32, 148, 0.32);
+    }
+    .userInput{
+        top:1em;
+        width:200px;
+        position:fixed;
+       
+    }
+    .box{
+        margin:9em auto;
+        display:relative;
+        margin-left:20%;
+        text-align:center;
+        width:300px;
+        background-color:rgb(20, 13, 20);
+        padding-bottom:1em;
+        border-radius:8px;
+    
+    }
+    .box #form{
+        align-self:center;
+       
+    }
+    .box h2{
+        color:white;
+        padding-top:1em;
+        padding-bottom:.5em;
+    }
+    .box form #player{
+        font-size:1.2em;
+        color:white;
+    }
+    .box form input,label{
+        display:flex;
+        flex-direction:column;
+        margin:1em auto;
+    }
+    .box form input[type='text']{
+        width:10rem;
+    }
+    .box form .Playerbutton button{
+    color:red;
+    margin:0.9em;
+    
+    }
+    .box form .Playerbutton #reset{
+        padding:4px 6px;
+    
+    }
+    .box form .Playerbutton #submit{
+        background:rgb(233, 102, 9);
+        color:rgb(255, 255, 255);
+        border:none;
+        padding:6px;
+        padding-left:7px;
+        font-size:1em;
+    }
+}
+
+.container{
+    display:flex;
+    width:100%;
+    height:100vh;
+    justify-content: center;
+    align-items:center;
+    background:black;
+}
+.loading{
+    position:absolute;
+    width:300px;
+    height:300px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    
+  
+    
+}
+.loading .a{
+    width:50px;
+    height:50px;
+    border:4px groove rgb(216, 20, 174);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation:loading 2s linear infinite alternate;
+}
+.loading .b{
+    width:50px;
+    height:50px;
+    border:4px groove rgb(0, 247, 255);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    animation:loading1 2s linear infinite alternate;
+    
+
+}
+#loaderTxt{
+    font-size:40px;
+    color:white;
+    bottom:30%;
+    left:60%;
+    position:absolute;
+    animation:loading3 2s linear infinite;
+}
+@keyframes loading{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(90deg);
+    } 
+    50%{
+        transform:rotate(180deg);
+    }
+    75%{
+        transform:rotate(270deg);
+
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes loading1{
+    0%{
+        transform:rotate(0deg);
+    }
+    25%{
+        transform:rotate(-90deg);
+    } 
+    50%{
+        transform:rotate(-180deg);
+    }
+    75%{
+        transform:rotate(-270deg);
+
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+}
+@keyframes loading3{
+    from{
+        transform:translate(30px);
+    }
+    to{
+        transform:translate(20px);
+        color:transparent;
+    }
+}
