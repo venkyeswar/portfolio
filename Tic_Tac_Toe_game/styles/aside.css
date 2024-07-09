@@ -31,12 +31,14 @@
 .box{
     display:relative;
     text-align:center;
+    
     margin:8em 35%;
     background-color:rgb(20, 13, 20);
     padding-bottom:1em;
     border-radius:8px;
 
 }
+
 .box h2{
     color:white;
     padding-top:1em;

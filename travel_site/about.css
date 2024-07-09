@@ -9,25 +9,25 @@ footer{
     margin:0px;
 }
 body{
-    background:rgb(6, 103, 118);
+    background:rgba(109, 144, 152, 0.833);
 }
 header{
     margin:0px;
     padding:20,30px;
-background:rgba(9, 25, 30, 0.484);
+background:rgba(169, 235, 255, 0.484);
 }
 header .logo a,nav ul li a{
 
-    color:rgb(252, 6, 142);
+    color:rgb(255, 255, 255);
     text-shadow:1px 2px 3px rgb(2, 13, 23);
 
 }
 nav ul li a:hover{
-    background:rgb(252, 6, 142);
+    background:rgb(255, 255, 255);
     color:rgb(4, 11, 17);
 }
 h1{
-    color:rgb(92, 6, 39);
+    color:rgb(4, 0, 2);
 }
 #about{
     margin-left:20px;
@@ -40,7 +40,7 @@ h1{
     text-decoration: solid underline rgb(30, 7, 30) 4px;
 }
 p{
-    color:rgb(62, 2, 32);
+    color:rgb(0, 0, 0);
     font-size:larger;
     font-weight:400;
     text-align:justify;
@@ -66,20 +66,21 @@ footer{
     margin:23px 30px;
     background:rgba(26, 3, 3,0.3);
     box-sizing:border-box;
+    padding:1px 10px;
     border-radius:8px;
     box-shadow:1px 1px 2px black;
 }
 .nav_bar{
-    color:rgb(252, 6, 142);
+    color:rgb(18, 2, 11);
 }
 .nav_box ul{
     background:rgba(7, 43, 62, 0.87);
 }
 .box .nav_box ul li a{
-    color:rgb(252, 6, 142);
+    color:rgb(255, 249, 252);
 }
 .box .nav_box ul li a:hover{
-    background:rgb(252, 6, 142);
+    background:rgb(182, 172, 202);
     color:rgb(4, 11, 17);
 }
 
@@ -96,7 +97,7 @@ footer{
 }
 @media (max-width:480px){
     body{
-        background:rgb(47, 163, 167);
+        background:rgba(140, 182, 183, 0.916);
     }
     .txt {
         background:none;
@@ -105,7 +106,7 @@ footer{
         
     }
     .section1{
-        background:rgba(26, 94, 101, 0.354);
+        background:rgba(61, 68, 87, 0.354);
         margin:2em 1em;
     }
     .txt p{

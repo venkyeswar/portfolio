@@ -4,7 +4,12 @@
         padding:2.5em 3.5em;
     }
 }
-@media (max-width:475px){
+@media (max-width:600px){
+    .box{
+        width:400px;
+    }
+}
+@media (max-width:550px){
     #players ol{
        display:block;
         padding:2em;
